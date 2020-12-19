@@ -8,7 +8,7 @@ export default class UserList extends Component {
   };
   headings = [
     { name: "Image", width: "10%" },
-    { name: "Name", width: "10%" },
+    { name: "Name", width: "15%" },
     { name: "Phone", width: "20%" },
     { name: "Email", width: "20%" },
     { name: "DOB", width: "10%" },

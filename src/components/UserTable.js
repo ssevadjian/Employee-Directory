@@ -5,7 +5,7 @@ import Users from "./Users";
 function UserTable({ headings, users }) {
   return (
     <div>
-      <Table>
+      <Table striped bordered hover>
         <thead>
           <tr>
             {headings.map(({ name, width }) => {

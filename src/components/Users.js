@@ -9,7 +9,7 @@ function Users({ users }) {
             <tr key={login.uuid}>
               <td data-th="Image">
                 <img
-                  src={picture.large}
+                  src={picture.thumbnail}
                   alt="profile pic"
                   className="img-responsive"
                 />

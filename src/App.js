@@ -1,5 +1,5 @@
 import React from "react";
-import Main from "./components/Main";
+import UserListPage from "./components/UserListPage";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 
@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Wrapper>
         <Title/>
-        <Main/>
+        <UserListPage/>
       </Wrapper>
     </div>
   );

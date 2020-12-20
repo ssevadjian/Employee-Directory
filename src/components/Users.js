@@ -4,7 +4,7 @@ function Users({ users }) {
   return (
     <tbody>
       {users[0] !== undefined && users[0].name !== undefined ? (
-        users.map(({ login, picture, name }) => {
+        users.map(({ login, picture, name, email, location, phone}) => {
           return (
             <tr key={login.uuid}>
               <td data-th="Image">
@@ -16,6 +16,15 @@ function Users({ users }) {
               </td>
               <td data-th="Name">
                 {name.title} {name.first} {name.last}
+              </td>
+              <td data-th="Phone">
+                {phone}
+              </td>
+              <td data-th="Email">
+                {email}
+              </td>
+              <td data-th="City">
+                {location.city}, {location.state}
               </td>
             </tr>
           );

@@ -2,7 +2,7 @@ import React from "react";
 import Table from "react-bootstrap/Table";
 import Users from "./Users";
 
-function UserTable({ headings, users }) {
+function UserTable({ headings, users, handleSort }) {
   return (
     <div>
       <Table striped bordered hover>
@@ -10,7 +10,13 @@ function UserTable({ headings, users }) {
           <tr>
             {headings.map(({ name, width }) => {
               return (
-                <th key={name} style={{ width }}>
+                <th 
+                  key={name} 
+                  style={{ width }}
+                  onClick={() => {
+                    handleSort(name.toLowerCase());
+                  }}
+                >
                   {name}
                 </th>
               );

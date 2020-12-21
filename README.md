@@ -6,6 +6,8 @@ This app was built using React and allows users to immediately access non-sensit
 
 ## Screenshot
 
+![EDhome](./assets/EDhome.png)
+![EDsearch](./assets/EDsearch.png)
 
 ## Github Repo
 
